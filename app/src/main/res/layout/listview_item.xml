@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+        <RelativeLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/tv_hotTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minLines="2"
+                android:text="从广州去东莞仅需要半个小时，美食
+美景统统都在等着你！"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/tv_gonglue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_hotTitle"
+                android:text="源自：羊城攻略"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="10sp"
+                android:layout_below="@+id/tv_hotTitle"/>
+            <ImageView
+                android:id="@+id/iv_eye"
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/find_hot_eye"
+                android:layout_below="@+id/tv_hotTitle"
+                android:layout_toRightOf="@id/tv_gonglue"
+                />
+            <TextView
+                android:id="@+id/tv_look"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10526"
+                android:textSize="10sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/tv_hotTitle"
+                android:layout_toRightOf="@+id/iv_eye"/>
+
+            <ImageView
+                android:id="@+id/iv_good"
+                android:layout_width="18dp"
+                android:layout_height="15dp"
+                android:background="@mipmap/find_hot_yes"
+                android:layout_below="@+id/tv_hotTitle"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/tv_good"
+                />
+            <TextView
+                android:id="@+id/tv_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23"
+                android:textSize="10sp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_hotTitle"
+                android:layout_alignRight="@+id/tv_hotTitle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_gonglue"
+                android:background="#F4F5F7"></View>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_place"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="8dp"
+            android:background="@mipmap/find_hot_city"
+        />
+
+</LinearLayout>
